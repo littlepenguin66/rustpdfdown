@@ -1,0 +1,24 @@
+[package]
+name = "rustpdfdown"
+version = "0.1.0"
+edition = "2021"
+description = "将PDF或图片转换为Markdown的工具"
+authors = ["rustpdfdown"]
+
+[dependencies]
+clap = { version = "4.4", features = ["derive"] }
+log = "0.4"
+env_logger = "0.10"
+dotenv = "0.15"
+base64 = "0.21"
+reqwest = { version = "0.11", features = ["json", "blocking"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1", features = ["full"] }
+futures = "0.3"
+mime = "0.3"
+
+image = "0.24"
+temp-dir = "0.1"
+thiserror = "1.0"
+anyhow = "1.0"
